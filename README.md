@@ -7,8 +7,10 @@ The goal of this project was to develop a classification app for hand-drawn char
 I trained CNNs with and without data augmentation for the various characters considered acheiving around 97-99\% validation accuracy.
 I then built a streamlit app allowing a user to practice drawing various characters with the CNN giving a prediction for the top 3 most likely characters 
 drawn. The streamlit app can be tested here:
+https://willsutcliffe-character-app-streamlit-app-ozt9jf.streamlit.app/
 
 The corresponding github repo is:
+https://github.com/willsutcliffe/character-app-streamlit
 
 The main code used for the trainings can be found in the notebooks:
 Cyrillic\_pytorch.ipynb
@@ -54,7 +56,7 @@ The final CNN model architecture is summarised below:
   <img src="images/model.png" width="600" />
 </p>
 
-I kept the model fairly simple due to small available datasets. Another approach would be to use transfer learning with a more complicated model.
+I kept the model fairly simple due to the small available datasets. Another approach would be to use transfer learning with a more complicated model.
 
 Dropout is used for regularization. For training I used a batch size of 32 and the adam optimizer with a learning rate of 0.001. I generally found it was worth attempting to
 drop the learning rate by an order of magnitude when the validation loss / accuracy began to plateau. 
@@ -65,7 +67,9 @@ drop the learning rate by an order of magnitude when the validation loss / accur
 | Alphabet           | Train Accuracy  | Validation Accuracy |
 | -----------        | --------------- |---------------------|
 | Cyrillic (caps)    |                 |                     |
-| Cyrillic (no caps) |                 |                     |
+| Cyrillic (caps) aug|                 |                     |
+| Cyrillic           |                 |                     |
+| Cyrillic aug       |                 |                     |
 | Hiragana           |                 |                     |
 | Katakana           |                 |                     |
 

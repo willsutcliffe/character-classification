@@ -69,6 +69,17 @@ drop the learning rate by an order of magnitude when the validation loss / accur
 | Hiragana           |                 |                     |
 | Katakana           |                 |                     |
 
+Below the loss and accuracy are shown for a cyrillic letter training for train and validation.
+<p float="left">
+  <img src="images/Loss.png" width="600" />
+  <img src="images/Acc.png" width="600" />
+</p>
+
+The confusion matrix shows a very low amount of examples incorrectly predicted.
+<p float="left">
+  <img src="images/confusion.png" width="600" />
+</p>
+
 ## Exploration of GANs and Siamese networks 
 
 For cyrillic letters I also explored implementing a GAN for cyrillic letters in the notebook Cyrillic\_pytorch.ipynb. An example of GAN generated letters is shown below for the letter б.

@@ -7,7 +7,7 @@ The goal of this project was to develop a classification app for hand-drawn char
 I trained CNNs with and without data augmentation for the various characters considered acheiving around 97-99\% validation accuracy.
 I then built a streamlit app allowing a user to practice drawing various characters with the CNN giving a prediction for the top 3 most likely characters 
 drawn. The streamlit app can be tested here:
-https://willsutcliffe-character-app-streamlit-app-ozt9jf.streamlit.app/
+https://willsutcliffe-character-app-streamlit-app-nwgfzy.streamlit.app/
 
 The corresponding github repo is:
 https://github.com/willsutcliffe/character-app-streamlit
@@ -66,8 +66,8 @@ drop the learning rate by an order of magnitude when the validation loss / accur
 
 | Alphabet           | Train Accuracy  | Validation Accuracy |
 | -----------        | --------------- |---------------------|
-| Cyrillic (caps)    |                 |                     |
-| Cyrillic (caps) aug|                 |                     |
+| Cyrillic (caps)    |   99.932%       |  98.567 %           |
+| Cyrillic (caps) aug|   99.932%       |                     |
 | Cyrillic           |                 |                     |
 | Cyrillic aug       |                 |                     |
 | Hiragana           |                 |                     |
